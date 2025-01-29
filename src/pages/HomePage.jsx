@@ -3,6 +3,9 @@ import Header from "../components/Header";
 import { motion } from "framer-motion";
 import StatCart from "../components/StatCart";
 import { BarChart, ShoppingBag, Users, Zap } from "lucide-react";
+import SalesOverviewChart from "../components/Home/SalesOverviewChart";
+import CategoryDistrubutionChart from "../components/Home/CategoryDistrubutionChart";
+import SalesChannelChart from "../components/Home/SalesChannelChart";
 
 function HomePage() {
   return (
@@ -44,7 +47,11 @@ function HomePage() {
 
         {/* Charts */}
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4"></div>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+          <SalesOverviewChart />
+          <CategoryDistrubutionChart />
+          <SalesChannelChart />
+        </div>
       </main>
     </div>
   );
