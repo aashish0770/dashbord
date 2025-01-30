@@ -7,7 +7,7 @@ import SalesOverviewChart from "../components/Home/SalesOverviewChart";
 import CategoryDistrubutionChart from "../components/Home/CategoryDistrubutionChart";
 import SalesChannelChart from "../components/Home/SalesChannelChart";
 
-function HomePage() {
+const HomePage = () => {
   return (
     <div className="flex-1 overflow-auto relative z-10">
       <Header title="Overview" />
@@ -50,11 +50,13 @@ function HomePage() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
           <SalesOverviewChart />
           <CategoryDistrubutionChart />
+        </div>
+        <div className="w-full mt-8">
           <SalesChannelChart />
         </div>
       </main>
     </div>
   );
-}
+};
 
 export default HomePage;

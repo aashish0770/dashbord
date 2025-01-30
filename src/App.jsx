@@ -5,6 +5,7 @@ import HomePage from "./pages/HomePage";
 import ProductPage from "./pages/ProductPage";
 
 import Sidebar from "./components/Sidebar";
+import UserPage from "./pages/UserPage";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/products" element={<ProductPage />} />
+        <Route path="/users" element={<UserPage />} />
       </Routes>
     </div>
   );
